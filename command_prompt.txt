@@ -1,0 +1,26 @@
+깃허브 명령프롬프트 명령어 사용법.
+
+git -> git의 사용법이나온다.(전부영어임)
+git --version 깃의 버전이나옴(낮으면 업데이트를 해야함.)
+git config --global user.name thescanthis ->내가쓸수있게 초기화를 함
+git config --global user.email thescanthis@gmail.com ->이메일도 초기화
+
+이렇게한 후 깃허브의 Hash코드를 복사해서
+cd(Change Directory)디렉토리 변경
+cd C:\깃허브 Tutorial(c드라이브에 내가 만든 폴더를 동기화시킨다.)
+git clone(깃허브와 내컴퓨터를 문서등 파일들을 다운로드 할 수있게 만든다.)
+git add 파일을 더한다.(git에는 업로드가 안됨, 이렇게 더한 후 push를 사용해서 업로드를함.)
+gitcommit -m "언제보냈는지 알려주기위해 오류가 낫을경우 찾을수있게 표기 할수있음."
+git push 깃에 파일등을 보내겠다는 명령어임.
+
+git clone https://github.com/thescanthis/Git-Tutorial.git
+(내 깃허브에 다운로드 할수있게 만듬)
+이렇게하면 git이라는 폴더가 보이는데 (안보이면 보기 -> 옵션에서 숨김파일 해제)
+이렇게 만든 저장소를 컴퓨터에 만들어서 로컬리포지터리,깃에있는건 리모트리포지터리라고함.
+
+ex)텍스트 파일을 한개만듬.
+cd Git-Tutorial
+git add discode.txt
+git commit -m "Add Text File[discode.txt]" 내가 언제파일을 업로드했는지 알려주기위해.
+이렇게 한후 
+git push 하고 깃사이트를 새로고침하면 업로드가된다.
